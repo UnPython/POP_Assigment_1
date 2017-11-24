@@ -2,8 +2,8 @@
 import socket
 def connect():
     s = socket.socket()					# Create a socket object
-    host = 	"csmpop.ddns.net"							# Type: string. The hostname of the machine
-    port = 	33332							# Type: number. The port running the service
+    host = 	"10.40.32.25"							# Type: string. The hostname of the machine
+    port = 	33331							# Type: number. The port running the service
 
     s.connect((host, port))						# Connect to the specified host and port
 
@@ -30,3 +30,4 @@ def connect():
     # Shutdown and close the socket connection
     s.shutdown(socket.SHUT_WR)
     s.close()
+connect()
